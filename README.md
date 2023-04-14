@@ -15,7 +15,7 @@
     - Writing a simple test using 'describe' and 'test' or 'it'
     - Running tests using the 'npm test' command
 
-4. Matchers (20 minutes)
+4. [Matchers (20 minutes)](docs/chapter-4.md)
 
     - Using matchers to validate test results (toBe, toEqual, toBeTruthy, toBeFalsy, etc.)
     - Writing custom matchers for specific requirements
