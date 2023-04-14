@@ -35,13 +35,13 @@
     - Mocking modules and dependencies
     - Spying on functions with 'jest.spyOn()'
 
-7. Snapshot testing (10 minutes)
+7. [Snapshot testing (10 minutes)](docs/chapter-7.md)
 
     - Introduction to snapshot testing and its benefits
     - Creating and updating snapshots
     - Handling changes in snapshots and version control
 
-8. Code coverage (5 minutes)
+8. [Code coverage (5 minutes)](docs/chapter-8.md)
 
     - Importance of code coverage in testing
     - Generating coverage reports with Jest
