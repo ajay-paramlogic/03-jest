@@ -21,7 +21,7 @@
     - Writing custom matchers for specific requirements
     - Demonstrating practical examples of different matchers
 
-5. Testing asynchronous code (15 minutes)
+5. [Testing asynchronous code (15 minutes)](docs/chapter-5.md)
 
     - Handling Promises with 'resolves' and 'rejects'
     - Using 'async/await' with Jest
