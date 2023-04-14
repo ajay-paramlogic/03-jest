@@ -1,5 +1,41 @@
 # Writing Basic Tests with Jest
 
+## Setup TypeScript with Jest
+```bash
+npm init -y
+npm install --save-dev typescript ts-node
+npx tsc --init
+```
+
+```json
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "sourceMap": true
+  }
+}
+```
+
+```bash
+npm install --save-dev jest @types/jest ts-jest
+npx jest --init
+```
+
+```js
+export default {
+  preset: "ts-jest",
+  testEnvironment: "node",
+  clearMocks: true,
+  collectCoverage: true,
+  coverageDirectory: "coverage",
+  coverageProvider: "v8",
+};
+```
+
 This section will guide you through writing basic tests using the Jest test framework. We will cover understanding test suites and test cases, writing simple tests using `describe` and `test` (or `it`), and running tests using the `npm test` command.
 
 ## Understanding Test Suites and Test Cases
