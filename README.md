@@ -27,7 +27,7 @@
     - Using 'async/await' with Jest
     - Timeouts and managing slow tests
 
-6. Mocking (20 minutes)
+6. [Mocking (20 minutes)](docs/chapter-6.md)
 
     - The importance of mocking in testing
     - Using Jest's built-in mocking capabilities
