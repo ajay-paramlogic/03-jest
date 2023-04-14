@@ -46,6 +46,9 @@
     - Importance of code coverage in testing
     - Generating coverage reports with Jest
 
-9. Jest With React Testing Library
+9. [Jest With React Testing Library](docs/chapter-9.md)
+    - React Testing Library is a lightweight testing utility designed to test React components in a way that closely mimics how users interact with them, emphasizing accessibility and user interactions.
+    - It encourages writing tests that focus on the rendered output of components rather than their implementation details, promoting maintainable and refactor-friendly tests.
+    - It offers simple and intuitive APIs, such as render, fireEvent, and various query functions like getByText, getByRole, and getByTestId, to make testing more efficient and user-centric.
 
 10. Jest With Cypress
