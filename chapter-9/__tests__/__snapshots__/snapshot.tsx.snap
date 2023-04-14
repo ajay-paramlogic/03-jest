@@ -1,6 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders homepage unchanged 1`] = `
+exports[`Snapshot Tests Button renders correctly 1`] = `
+<DocumentFragment>
+  <button
+    type="button"
+  >
+    Click me!
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Snapshot Tests UserCard renders correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <h2>
+      John Doe
+    </h2>
+    <p>
+      john@example.com
+    </p>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Snapshot Tests renders homepage unchanged 1`] = `
 <div>
   <div
     class="container"
