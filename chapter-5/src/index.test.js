@@ -1,4 +1,6 @@
-const { readFile, writeFile } = require("./index");
+const { readFile, writeFile, timerGame, getUserName } = require("./index");
+jest.useFakeTimers();
+jest.spyOn(global, "setTimeout");
 
 describe("fileUtils", () => {
   beforeAll(async () => {
@@ -40,5 +42,14 @@ describe("fileUtils", () => {
     await expect(writeFile("/root/test.txt", "Hello, Jest!")).rejects.toThrow(
       "Failed to write file: /root/test.txt"
     );
+  });
+});
+
+describe("timerGame", () => {
+  test("waits 1 second before ending the game", () => {
+    timerGame();
+
+    expect(setTimeout).toHaveBeenCalledTimes(1);
+    expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), 1000);
   });
 });

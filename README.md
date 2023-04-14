@@ -45,3 +45,7 @@
 
     - Importance of code coverage in testing
     - Generating coverage reports with Jest
+
+9. Jest With React Testing Library
+
+10. Jest With Cypress

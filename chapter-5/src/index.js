@@ -17,4 +17,12 @@ async function writeFile(filePath, data) {
   }
 }
 
-module.exports = { readFile, writeFile };
+function timerGame(callback) {
+  console.log("Ready....go!");
+  setTimeout(() => {
+    console.log("Time's up -- stop!");
+    callback && callback();
+  }, 1000);
+}
+
+module.exports = { readFile, writeFile, timerGame };
