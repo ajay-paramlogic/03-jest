@@ -10,7 +10,7 @@ class BookLibrary {
 
   addBook(book) {
     if (!this.authors.some((author) => author.name === book.author)) {
-      throw new Error("Author not found");
+      throw new Error('Author not found');
     }
     this.books.push(book);
   }

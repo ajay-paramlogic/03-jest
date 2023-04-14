@@ -3,11 +3,13 @@
 ## Setup with ES Modules
 ```sh
 npm init -y
-npm install --save-dev jest eslint
+npm install --save-dev jest eslint eslint-plugin-jest eslint-plugin-prettier prettier
 npx eslint --init
 npx jest --init
 
 # Add "type": "module" to package.json
+# Update "test" script in package.json to "NODE_OPTIONS=--experimental-vm-modules jest"
+# CTRL + SHIFT + P > Prettier > Prettier: Create Configuration File
 ```
 
 ```js
@@ -36,10 +38,10 @@ export default {
   collectCoverage: true,
   coverageDirectory: "coverage",
   coverageProvider: "v8",
-  testEnvironment: 'node',
+  testEnvironment: "node",
   transform: {},
 };
-
+```
 
 In this documentation, we'll explore various built-in matchers provided by Jest, how to create custom matchers for specific requirements, and practical examples of using different matchers.
 
